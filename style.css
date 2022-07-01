@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #c6c5c9;
+    font-family: 'Arima', cursive;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+/* Add style to image */
+#logo img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+/* Add space betweeen elements */
+nav ul li{
+    margin: 0 20px;
+}
+/* To remove the lines in nav */
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+/* To highlight the web navigator */
+nav li a:hover{
+    color: yellow;
+}
+/* header file  */
+.header{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bio-block{
+    display: flex;
+}
+
+#bio img{
+    width:250px;
+    height: 205px;
+    border-radius: 50%;
+    margin: 100px;
+}
+p{
+    font-size: 1.2em;
+}
+hr{
+    width: 100px;
+}
+#portfolio{
+    background: url(./assets/Porfolio-background.svg);
+    background-color: black;
+    color:white;
+}
+#portfolio,
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:50px;
+}
+
+
+#portfolio div{
+    display:flex;
+    justify-content: space-between; 
+    margin:10px 0;
+    width: 100%;
+}
+
+#portfolio h3,
+p, hr{
+    margin-bottom: 20px;
+}
+
+#portfolio div article{
+    background: white;
+    color:black;
+    height: 200px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 10px;
+}
+#portfolio div article p{
+    padding: 0 5px;
+}
+
+#skills-container{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+}
+
+#skills-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#skills ul{
+    list-style:none;
+}
+
+#skills ul li{
+    margin:10px 0;
+}
+
+progress[value]{
+    height: 10px;
+    width: 350px;
+    -webkit-appearance:none;
+}
+
+progress[value]::-webkit-progress-bar{
+    background-color: grey;
+    border-radius: 2px; 
+     box-shadow: 0 2px 5px rgba(0,0,0,0.25 inset);
+}
+
+::-webkit-progress-value{
+    background-color: #f05136;
+}
+
+#skills ul{
+    font-size: 1.5em;;
+}
+
+
+#contact{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.input{
+    line-height: 2em;
+    width: 350px;
+    border-radius: 3px;
+    border-color: rgb(0, 4, 2);
+    margin: 20px 0;
+}
+
+#contact form input:last-child{
+    margin-top: 30px;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
